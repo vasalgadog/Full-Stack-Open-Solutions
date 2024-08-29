@@ -1,25 +1,31 @@
 import { useState } from 'react'
 
-const Button = (props) => {
+const Button = ({handleClick, text}) => {
   return(
-    <button onClick={props.handleClick}>{props.text}</button>
+    <button onClick={handleClick}>{text}</button>
   )
 }
 
-const Statics = (props) => {
+const Statics = ({text, value}) => {
   return(
     <div>
-      {props.text}: {props.value}
+      {text}: {value}
     </div>
   )
 }
 
-const Statistics = (props) =>{
+const Statistics = ({ good, neutral, bad }) =>{
+  const all = good + neutral + bad
+  const average = all>0 ? parseFloat(((good) - (bad))/all) : 0
+  const positive = all>0 ? parseFloat((good/all)*100) : 0
   return(
     <div>
-      <Statics text='good' value={props.good}/>
-      <Statics text='neutral' value={props.neutral}/>
-      <Statics text='bad' value={props.bad}/>
+      <Statics text='good' value={good}/>
+      <Statics text='neutral' value={neutral}/>
+      <Statics text='bad' value={bad}/>
+      <Statics text='all' value={all}/>
+      <Statics text='average' value={average}/>
+      <Statics text='positive' value={positive +'%'}/>
     </div>
   )
 }

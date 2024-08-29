@@ -15,8 +15,8 @@ This is my progress
     - 1.4: Course Information step 4 ✅
     - 1.5: Course Information step 5 ✅
     - 1.6: unicafe step 1 ✅
-    - 1.7: unicafe step 2 ❕
-    - 1.8: unicafe step 3
+    - 1.7: unicafe step 2 ✅
+    - 1.8: unicafe step 3 ❕
     - 1.9: unicafe step 4
     - 1.10: unicafe step 5
     - 1.11*: unicafe step 6
