@@ -6,7 +6,7 @@ const Button = ({handleClick, text}) => {
   )
 }
 
-const Statics = ({text, value}) => {
+const StaticLine = ({text, value}) => {
   return(
     <div>
       {text}: {value}
@@ -18,7 +18,7 @@ const Statistics = ({ good, neutral, bad }) =>{
   const all = good + neutral + bad
   const average = all>0 ? parseFloat(((good) - (bad))/all) : 0
   const positive = all>0 ? parseFloat((good/all)*100) : 0
-  if ( all != 1){
+  if ( all < 1){
     return(
       <div>
         <p>No feedback given</p>
@@ -27,12 +27,12 @@ const Statistics = ({ good, neutral, bad }) =>{
   }
   return(
     <div>
-      <Statics text='good' value={good}/>
-      <Statics text='neutral' value={neutral}/>
-      <Statics text='bad' value={bad}/>
-      <Statics text='all' value={all}/>
-      <Statics text='average' value={average}/>
-      <Statics text='positive' value={positive +'%'}/>
+      <StaticLine text='good' value={good}/>
+      <StaticLine text='neutral' value={neutral}/>
+      <StaticLine text='bad' value={bad}/>
+      <StaticLine text='all' value={all}/>
+      <StaticLine text='average' value={average}/>
+      <StaticLine text='positive' value={positive +'%'}/>
     </div>
   )
 }
