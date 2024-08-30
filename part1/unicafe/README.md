@@ -93,3 +93,17 @@ const Statistics = (props) => {
 }copy
 The application's state should still be kept in the root App component.
 ```
+
+## Step 6
+
+Display the statistics in an HTML table, so that your application looks roughly like this:
+![app with table](image.png)
+screenshot of statistics table
+Remember to keep your console open at all times. If you see this warning in your console:
+![error on colsole](image-1.png)
+console warning
+Then perform the necessary actions to make the warning disappear. Try pasting the error message into a search engine if you get stuck.
+
+Typical source of an error Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist. is from a Chrome extension. Try going to chrome://extensions/ and try disabling them one by one and refreshing React app page; the error should eventually disappear.
+
+Make sure that from now on you don't see any warnings in your console!
