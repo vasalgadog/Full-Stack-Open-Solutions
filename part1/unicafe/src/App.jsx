@@ -18,6 +18,13 @@ const Statistics = ({ good, neutral, bad }) =>{
   const all = good + neutral + bad
   const average = all>0 ? parseFloat(((good) - (bad))/all) : 0
   const positive = all>0 ? parseFloat((good/all)*100) : 0
+  if ( all != 1){
+    return(
+      <div>
+        <p>No feedback given</p>
+      </div>
+    )
+  }
   return(
     <div>
       <Statics text='good' value={good}/>
