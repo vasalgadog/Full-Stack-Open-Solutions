@@ -29,6 +29,18 @@ This is my progress
     - 2.3*: Course Information step 8 ✅
     - 2.4: Course Information step 9 ✅
     - 2.5: Course Information step 10 ✅
+    - 2.6: The Phonebook Step 1 ✅
+    - 2.7: The Phonebook Step 2 ❕
+    - 2.8: The Phonebook Step 3
+    - 2.9*: The Phonebook Step 4
+    - 2.10: The Phonebook Step 5
+    - 2.11: The Phonebook Step 6
+    - 2.12: The Phonebook step 7
+    - 2.13: The Phonebook step 8
+    - 2.14: The Phonebook step 9
+    - 2.15*: The Phonebook step 10
+    - 2.16: The Phonebook step 11
+    - 2.17: The Phonebook step 12
 - Part 3 - Programming a server with NodeJS and Express
 - Part 4 - Testing Express servers, user administration
 - Part 5 - Testing React apps
