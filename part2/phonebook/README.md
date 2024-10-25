@@ -1,6 +1,8 @@
 # The Phonebook
 See original steps 1 to 5 [here](https://fullstackopen.com/en/part2/forms#exercises-2-6-2-10),
 
+Note: This solution includes a ``getByName`` endpoint that returns all persons with a given name, to verify that the new person is not added to the phonebook when is testing on different browsers.
+
 ## 2.6: The Phonebook Step 1
 Let's create a simple phonebook. In this part, we will only be adding names to the phonebook.
 

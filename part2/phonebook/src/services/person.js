@@ -6,6 +6,11 @@ const getAll = () => {
     return request.then(response => response.data)
 }
 
+const getByName = (name) => {
+    const request = axios.get(`${baseUrl}/?name=${name}`)
+    return request.then(response => response.data)
+}
+
 const create = newObject => {
     const request = axios.post(baseUrl, newObject)
     return request.then(response => response.data)
@@ -24,6 +29,7 @@ const update = (newObject) => {
 export default {
   getAll,
   create,
+  getByName,
   deletePerson,
   update
 }
